@@ -31,11 +31,11 @@ class Owner
   end
   
   def cats
-    my_cats = Cat.all.select { |owner| owner == self }
+    my_cats = Cat.all.select { |cat| cat.owner == self }
   end
   
   def dogs
-    my_dogs = Dog.all.select { |owner| owner == self }
+    my_dogs = Dog.all.select { |dog| dog.owner == self }
   end
   
   def buy_cat(cat_name)
