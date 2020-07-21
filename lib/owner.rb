@@ -55,7 +55,11 @@ class Owner
   
   def sell_pets
     my_pets = []
-    my_pets.
+    my_pets << self.cats
+    my_pets << self.dogs
+    my_pets.flatten!
+    
+    
   end
   
 end
