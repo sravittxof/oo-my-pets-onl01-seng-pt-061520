@@ -5,6 +5,7 @@ class Owner
   @@all = []
   
   def initialize(name="")
+    @name = name
     @species = "human"
     save
   end
