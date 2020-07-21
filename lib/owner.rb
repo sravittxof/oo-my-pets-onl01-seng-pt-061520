@@ -58,8 +58,8 @@ class Owner
     my_pets << self.cats
     my_pets << self.dogs
     my_pets.flatten!
-    
-    
+    my_pets.each { |pet| pet.mood = "nervous" }
+    my_pets.each { |pet| pet.owner.clear }
   end
   
 end
